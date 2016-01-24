@@ -64,15 +64,15 @@ var getYTPVideoID = function( url ) {
 			autoPlay: true,
 			vol: 50, // 1 to 100
 			addRaster: false,
-			opacity: 1,
+			opacity: .71,
 			quality: "default", //or “small”, “medium”, “large”, “hd720”, “hd1080”, “highres”
-			mute: false,
+			mute: true,
 			loop: 9999,
-			showControls: true,
+			showControls: false,
 			showAnnotations: false,
-			showYTLogo: false,
+			showYTLogo: true,
 			stopMovieOnBlur: true,
-			realfullscreen: false,
+			realfullscreen: true,
 			gaTrack: true,
 			optimizeDisplay: true,
 			onReady: function( player ) {}
@@ -675,7 +675,7 @@ var getYTPVideoID = function( url ) {
 			if( typeof real == "undefined" ) real = YTPlayer.opt.realfullscreen;
 			real = eval( real );
 			var controls = jQuery( "#controlBar_" + YTPlayer.id );
-			/*var fullScreenBtn = controls.find( ".mb_OnlyYT" );*/
+			var fullScreenBtn = controls.find( ".mb_OnlyYT" );
 			var videoWrapper = YTPlayer.isSelf ? YTPlayer.opt.containment : YTPlayer.wrapper;
 			//var videoWrapper = YTPlayer.wrapper;
 			if( real ) {
@@ -684,7 +684,7 @@ var getYTPVideoID = function( url ) {
 					var isFullScreen = RunPrefixMethod( document, "IsFullScreen" ) || RunPrefixMethod( document, "FullScreen" );
 					if( !isFullScreen ) {
 						YTPlayer.isAlone = false;
-						/*fullScreenBtn.html( jQuery.mbYTPlayer.controls.onlyYT );*/
+						fullScreenBtn.html( jQuery.mbYTPlayer.controls.onlyYT );
 						jQuery( YTPlayer ).YTPSetVideoQuality( YTPlayer.opt.quality );
 						videoWrapper.removeClass( "fullscreen" );
 						videoWrapper.CSSAnimate( {
@@ -756,7 +756,7 @@ var getYTPVideoID = function( url ) {
 						zIndex: 0
 					} );
 				}
-				/*fullScreenBtn.html( jQuery.mbYTPlayer.controls.onlyYT );*/
+				fullScreenBtn.html( jQuery.mbYTPlayer.controls.onlyYT );
 				YTPlayer.isAlone = false;
 			}
 
@@ -1115,15 +1115,15 @@ var getYTPVideoID = function( url ) {
 			} );
 			YTPlayer.volumeBar = volumeBar;
 			/* time elapsed */
-			/*var idx = jQuery( "<span/>" ).addClass( "mb_YTPTime" );*/
+			var idx = jQuery( "<span/>" ).addClass( "mb_YTPTime" );
 			var vURL = data.videoURL ? data.videoURL : "";
 			if( vURL.indexOf( "http" ) < 0 ) vURL = jQuery.mbYTPlayer.locationProtocol + "//www.youtube.com/watch?v=" + data.videoURL;
 			var movieUrl = jQuery( "<span/>" ).html( jQuery.mbYTPlayer.controls.ytLogo ).addClass( "mb_YTPUrl ytpicon" ).attr( "title", "view on YouTube" ).on( "click", function() {
 				window.open( vURL, "viewOnYT" )
 			} );
-			/*var onlyVideo = jQuery( "<span/>" ).html( jQuery.mbYTPlayer.controls.onlyYT ).addClass( "mb_OnlyYT ytpicon" ).on( "click", function() {
+			var onlyVideo = jQuery( "<span/>" ).html( jQuery.mbYTPlayer.controls.onlyYT ).addClass( "mb_OnlyYT ytpicon" ).on( "click", function() {
 				jQuery( YTPlayer ).YTPFullscreen( data.realfullscreen );
-			} );*/
+			} );
 			var progressBar = jQuery( "<div/>" ).addClass( "mb_YTPProgress" ).css( "position", "absolute" ).click( function( e ) {
 				timeBar.css( {
 					width: ( e.clientX - timeBar.offset().left )
@@ -1142,7 +1142,7 @@ var getYTPVideoID = function( url ) {
 			var loadedBar = jQuery( "<div/>" ).addClass( "mb_YTPLoaded" ).css( "position", "absolute" );
 			var timeBar = jQuery( "<div/>" ).addClass( "mb_YTPseekbar" ).css( "position", "absolute" );
 			progressBar.append( loadedBar ).append( timeBar );
-			/*buttonBar.append( playpause ).append( MuteUnmute ).append( volumeBar ).append( idx );*/
+			buttonBar.append( playpause ).append( MuteUnmute ).append( volumeBar ).append( idx );
 			if( data.showYTLogo ) {
 				buttonBar.append( movieUrl );
 			}

@@ -17,5 +17,5 @@ content: " ";
     z-index: 10;
     top: 0;
     left: 0;
-    background: -webkit-radial-gradient(top center, ellipse cover, rgba(222,12,36,0.65) 0%,rgba(81,142,170,.98) 100%);
+    background: -webkit-radial-gradient(top center, ellipse cover, rgba(222,12,36,0.55) 0%,rgba(81,142,170,.89) 100%);
 }
