@@ -1,15 +1,21 @@
-body{
+.pattern{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:5;
+    top: 0;
+    left: 0;
     background:
     radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#282828;
+    radial-gradient(black 15%, transparent 26%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 100%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 100%) 8px 9px;
+    background-color:rgba(40,40,40,..07);
     background-size:16px 16px;
 }
 
 
-.pattern {
+.grad {
 content: " ";
     width: 100%;
     height: 100%;
