@@ -25,11 +25,6 @@ content: " ";
     background: -webkit-radial-gradient(top center, ellipse cover, rgba(222,12,36,0.6) 0%,rgba(81,142,170,.84) 100%);
 }
 
-/*
-Tutorial Name: Modernize Your Site: Building a YouTube Video Background 
-Author: Samuel Dalusung
-*/
-
 
 /* GENERAL STYLES
 ================================================== */
@@ -43,7 +38,7 @@ body {
     padding:0;
     height:100%;
     width:100%;
-    -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing:antialiased; /* Good for light text on dark background. So on a video makes sense*/
     -webkit-text-size-adjust:100%
 }
 
@@ -68,7 +63,7 @@ ul li {
 
 
 #colorize {
-    color:#f1c40f;
+    color:#DE0C24;
     font-family:'Lato',sans-serif;
     font-size:40px
 }
@@ -77,7 +72,7 @@ ul li {
 .divider {
     display:block;
     width:300px;
-    height:95px;
+    height:55px;
     margin:10px auto
 }
 
@@ -125,30 +120,6 @@ ul li {
     background-position:top center
 }
 
-a.big-background-btn {
-    font-family:'Lato',sans-serif;
-    font-size:13px;
-    text-transform:uppercase;
-    text-decoration:none;
-    color:#fff;
-    background:transparent;
-    border:2px solid #fff;
-    padding:10px 14px;
-    cursor:pointer;
-    letter-spacing:2px;
-    text-align:center;
-    display:inline-block;
-    -webkit-transition:.4s background ease;
-    -moz-transition:.4s background ease;
-    -o-transition:.4s background ease;
-    transition:.4s background ease;
-}
-
-.big-background-btn:hover {
-    color:#fff;
-    background:rgba(255,255,255,0.20)
-}
-
 .big-background-default-image {
     background:url(../images/sunset.jpg);
     background-repeat:no-repeat;
@@ -160,43 +131,16 @@ a.big-background-btn {
     backface-visibility:hidden
 }
 
+.sections {
+    font:35px/23px 'Raleway',sans-serif;
+    height:55px;
 
-
-/* ABOUT SECTION
-================================================== */
-.about-section {
-    font-family:'Lato',sans-serif;
-    color:#7f8c8d;
-    background:#fff;
-    padding:60px 20px
 }
 
-.about-section-container {
-    text-align:center;
-    padding-bottom:50px
-}
-
-.about-section-title {
-    font-family:'Raleway',sans-serif;
-    font-size:40px;
-    background:#fff;
-    color:#3d566e;
-    padding:0 35px;
-    margin-bottom:22px;
-    background-attachment:scroll;
-    background-repeat:repeat-x;
-    background-position:center center;
-    text-transform:uppercase
-}
-
-
-
-a.about-section-btn {
-    font-family:'Lato',sans-serif;
-    font-size:13px;
+.sections li {
     text-transform:uppercase;
     text-decoration:none;
-    color:#34495e;
+    color:#400D12;
     background:transparent;
     border:2px solid #34495e;
     padding:10px 14px;
@@ -210,9 +154,47 @@ a.about-section-btn {
     transition:.4s background ease;
 }
 
-.about-section-btn:hover {
-    color:#fff;
-    background: #34495e;
+.sections li:hover {
+    color:#DE0C24;
+    /* color: #DE0C24; */
+    background: #518EAA;
+}
+
+/* Info SECTION
+================================================== */
+.info-section {
+    font-family:'Lato',sans-serif;
+    color:#7f8c8d;
+    background:#fff;
+    padding:20px 20px
+}
+
+.about-section-container {
+    text-align:center;
+    padding-bottom:50px
+}
+
+.projects-section-container {
+    text-align:center;
+    padding-bottom:50px
+}
+
+.blog-section-container {
+    text-align:center;
+    padding-bottom:50px
+}
+
+.info-section-title {
+    font-family:'Raleway',sans-serif;
+    font-size:40px;
+    background:#fff;
+    color:#3d566e;
+    padding:0 35px;
+    margin-bottom:22px;
+    background-attachment:scroll;
+    background-repeat:repeat-x;
+    background-position:center center;
+    text-transform:uppercase
 }
 
 
@@ -252,6 +234,10 @@ a.about-section-btn {
 /* SOCIALS
 ================================================== */
 .socials a {
+    -webkit-transition:.6s  ease;
+    -moz-transition:.6s ease;
+    -o-transition:.6s ease;
+    transition:.6s ease;
     color:#fff
 }
 
