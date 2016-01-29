@@ -65,7 +65,8 @@ ul li {
 #colorize {
     color:#DE0C24;
     font-family:'Lato',sans-serif;
-    font-size:40px
+    font-size:40px;
+    font-weight: 100;
 }
 
 
@@ -106,7 +107,7 @@ ul li {
 
 .big-background-title {
 
-    font-family:'Inconsolata',sans-serif;
+    font:78px/13px 'Raleway',sans-serif;
     font-size:78px;
     color:#fff;
     font-weight:300;
@@ -227,6 +228,18 @@ ul li {
     background-attachment:scroll;
     background-repeat:repeat-x;
     background-position:top center
+}
+
+.card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    -webkit-transition: all.2s  ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 
