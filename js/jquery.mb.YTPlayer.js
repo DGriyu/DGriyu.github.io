@@ -67,7 +67,7 @@ var getYTPVideoID = function( url ) {
 			opacity: 1,
 			quality: "default", //or “small”, “medium”, “large”, “hd720”, “hd1080”, “highres”
 			mute: true,
-			loop: 9999,
+			loop: false,
 			showControls: false,
 			showAnnotations: false,
 			showYTLogo: true,

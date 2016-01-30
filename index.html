@@ -14,9 +14,9 @@
     		jQuery(function(){
         		var isIframe=function(){var a=!1;try{self.location.href!=top.location.href&&(a=!0)}catch(b){a=!0}return a};if(!isIframe()){var logo=$("<a href='http://pupunzi.com/#mb.components/components.html' style='position:absolute;top:0;z-index:1000'><img id='logo' border='0' src='http://pupunzi.com/images/logo.png' alt='mb.ideas.repository'></a>");$("#wrapper").prepend(logo),$("#logo").fadeIn()}
         		var videos = [
-		            {videoURL:"M0z33ObzfkI",containment:'body',autoPlay:true, mute:true, startAt:0, loop:9999, ratio:"auto", addRaster:false, quality:"large"},
+		            {videoURL:"Yemt0aXyLyc",containment:'body',autoPlay:true, mute:true, startAt:0, loop:1, ratio:"auto", addRaster:false, quality:"hd780"}, {videoURL:"Ip2ZGND1I9Q",containment:'body',autoPlay:true, mute:true, startAt:0, loop:false, ratio:"auto", addRaster:false, quality:"hd780"}
 		        ];
-		        var myPlayListPlayer =jQuery("#myPlayerID").YTPlaylist(videos, false, function(video){
+		        var myPlayListPlayer =jQuery("#myPlayerID").YTPlaylist(videos, true, function(video){
 		            if(video.videoData){
 		                jQuery("#videoID").html(video.videoData.id);
 		                jQuery("#videoTitle").html(video.videoData.title);
@@ -60,18 +60,45 @@
                     <h2 class="info-section-title">Projects</h2>
                     	<ul>
                     		<li>
-                                <div class="card" style="width:50%">
-
-                                    <img id = "bdb" src="images/bdb-Screen.png" style="width:95%; margin-top:10px">
+                                <div class="card" style="width:100%">
+                                    <div class = "bdb">
+                                        <div class = "over">
+                                            <img src="images/bdb-Screen.png" style="width:100%; vertical-align:top;">
+                                        </div>
+                                    </div>
                                     <div class="BDB-Container">
                                         <p>Big Data Buses</p>
                                     </div>
                                 </div>
 
                             </li>
-                    		<li>Amazon Helpfullness Prediction</li>
-                    		<li>Backseat Driver</li>
-                    		<li>Mhacks Android App</li>
+                    		<li>
+                                <div class="card" style="width:50%">
+
+                                    <img src="" style="width:95%; margin-top:10px">
+                                    <div class="ML-Container">
+                                        <p>Amazon Helpfullness Prediction</p>
+                                    </div>
+                                </div>
+                            </li>
+                    		<li>
+                                <div class="card" style="width:50%">
+
+                                    <img src="" style="width:95%; margin-top:10px">
+                                    <div class="BD-Container">
+                                        <p>Backseat Driver</p>
+                                    </div>
+                                </div>
+                            </li>
+                    		<li>
+                                <div class="card" style="width:50%">
+
+                                    <img\ src="" style="width:95%; margin-top:10px">
+                                    <div class="MH-Container">
+                                        <p>Mhacks Android App</p>
+                                    </div>
+                                </div>
+                            </li>
                     	<ul>
                     <p></p>
               		
