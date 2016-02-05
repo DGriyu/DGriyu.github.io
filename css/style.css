@@ -215,15 +215,15 @@ ul li {
     padding:10px;
 }
 
-.over {
+.over-bdb {
     position:relative;
-    width:180px;
+    width:230px;
     height:100%;
     margin:10px auto;
 
 }
 
-.over:after {
+.over-bdb:after {
     text-align:center;
     font:25px/7px 'Raleway',sans-serif;
     line-height: 320px;
@@ -237,7 +237,37 @@ ul li {
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
-.card:hover .over:after {
+.card:hover .over-bdb:after {
+    opacity:1;
+}
+
+.ml {
+    padding:10px;
+}
+
+.over-ml {
+    position:relative;
+    width:410px;
+    height:100%;
+    margin:10px auto;
+
+}
+
+.over-ml:after {
+    text-align:center;
+    font:25px/7px 'Raleway',sans-serif;
+    line-height: 320px;
+    content:'Amazon Helpfulness Prediction';
+    color:#fff;
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.card:hover .over-ml:after {
     opacity:1;
 }
 
