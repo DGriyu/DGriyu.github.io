@@ -14,7 +14,8 @@
     		jQuery(function(){
         		var isIframe=function(){var a=!1;try{self.location.href!=top.location.href&&(a=!0)}catch(b){a=!0}return a};if(!isIframe()){var logo=$("<a href='http://pupunzi.com/#mb.components/components.html' style='position:absolute;top:0;z-index:1000'><img id='logo' border='0' src='http://pupunzi.com/images/logo.png' alt='mb.ideas.repository'></a>");$("#wrapper").prepend(logo),$("#logo").fadeIn()}
         		var videos = [
-		            {videoURL:"Yemt0aXyLyc",containment:'body',autoPlay:true, mute:true, startAt:0, loop:1, ratio:"auto", addRaster:false, quality:"hd780"}, {videoURL:"Ip2ZGND1I9Q",containment:'body',autoPlay:true, mute:true, startAt:0, loop:false, ratio:"auto", addRaster:false, quality:"hd780"}
+		            {videoURL:"Yemt0aXyLyc",containment:'body',autoPlay:true, mute:true, startAt:0, loop:1, ratio:"auto", addRaster:false, quality:"hd780"}, {videoURL:"Ip2ZGND1I9Q",containment:'body',autoPlay:true, mute:true, startAt:0, loop:false, ratio:"auto", addRaster:false, quality:"hd780"}, {videoURL:"xEF66GRecQg",containment:'body',autoPlay:true, mute:true, startAt:0, loop:false, ratio:"auto", addRaster:false, quality:"hd780"}, {videoURL:"SWv3ungRSBY",containment:'body',autoPlay:true, mute:true, startAt:0, loop:false, ratio:"auto", addRaster:false, quality:"hd780"}, {videoURL:"EyEyojMvveY",containment:'body',autoPlay:true, mute:true, startAt:0, loop:false, ratio:"auto", addRaster:false, quality:"hd780"}, {videoURL:"5SRGJkv3bTc",containment:'body',autoPlay:true, mute:true, startAt:0, loop:false, ratio:"auto", addRaster:false, quality:"hd780"}
+
 		        ];
 		        var myPlayListPlayer =jQuery("#myPlayerID").YTPlaylist(videos, true, function(video){
 		            if(video.videoData){
@@ -68,7 +69,7 @@
             <div class="about-section-container">
                 <h2 class="info-section-title">About</h2>
                 <p> <mark>Hey I'm Riyu!</mark> I'm an undergraduate computer science student at the University of Michigan, class of 2017. I'm professient in C++, Java, and Python and have taken classes on Data Structures, Operating Systems, and Machine Learning. I've also created Android apps for groups like Mhacks and Michigan hackers. I am interested to learn more about AI, Machine Learning, and Robotics as I find each field fascinating and increasingly relevant in modern day society.</p>
-              	<p>My resume can be found <a href ="files/RiyuBanerjeeResume.pdf">here</a> and you can contact me at <a href = "mailto:riyub@umich">riyub@umich.edu</a></p>
+              	<p>My resume can be found <a href ="files/RiyuBanerjeeResume.pdf">here</a> and you can contact me at <a href = "mailto:riyub@umich">riyub@umich.edu</a>.</p>
             </div>
             <a name="projects"></a>
             <div class="projects-section-container">
@@ -171,5 +172,6 @@
                         </li>
                     </ul>
                 </div>
+                <p style="color:white">Video background thanks to the <a style="color:red; text-decoration: none;"href="https://github.com/pupunzi/jquery.mb.YTPlayer">YTPlayer jquery library</a></p>
         </section>
     </body>
