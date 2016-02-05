@@ -115,7 +115,6 @@ ul li {
 .sections li {
     text-transform:uppercase;
     text-decoration:none;
-    color:#400D12;
     background:transparent;
     border:2px solid #34495e;
     padding:10px 14px;
@@ -129,11 +128,26 @@ ul li {
     transition:.4s background ease;
 }
 
+.sections a {
+    color:#400D12;
+    text-decoration: none;
+    -webkit-transition:.9s ease;
+    -moz-transition:.9s ease;
+    -o-transition:.9s ease;
+    transition:.9s ease;
+}
+
+
+
 .sections li:hover {
     color:#DE0C24;
-    /* color: #DE0C24; */
     background: #518EAA;
 }
+
+.sections li:hover a {
+    color:#DE0C24;
+}
+
 
 .pattern{
     width: 100%;
